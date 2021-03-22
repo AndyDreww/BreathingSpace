@@ -1,0 +1,399 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    line-height: 1.4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Oranienbaum', serif;
+}
+
+h1 {
+    font-size: 2.3em;
+    text-align: center;
+    background-color: #006d779a;
+    padding: 10px;
+}
+
+h1 span {
+    display: block;
+    font-size: .7em;
+    margin-top: .2em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    width: 50%;
+    margin: 0 auto 15px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header {
+    background: url('imgs/mountains.jpg') center;
+    background-size: cover;
+    height: 50vh;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,.6);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header nav img {
+    width: 50px;
+    color: #fff;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*
+******************
+******************
+        MOBILE NAV
+******************
+******************
+*/
+
+nav #open-menu-btn {
+    background-color: #83c5be;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.mob-nav {
+    justify-content: space-between;
+}
+
+.mob-nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #006d77;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6em;
+    display: flex;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.mob-nav li {
+    margin-bottom: 1.5em;
+}
+
+.mob-nav .close-menu-btn {
+    position: absolute;
+    top: 30px;
+    font-size: .7em;
+    cursor: pointer;
+}
+
+.md-nav {
+    display: none;
+}
+
+.mob-nav .open-menu {
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+}
+
+
+.sign-up-btn {
+    padding: .5em;
+    border-radius: .5em;
+    background-color: #83c5be;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sign-up-btn:hover,
+.sign-up-btn:focus {
+    background-color: #6ca39e;
+}
+
+.intro--section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.intro--text {
+    padding: 40px 20px;
+}
+
+.intro--text h2 {
+    color: #006d77;
+    border: none;
+}
+
+.intro--text p {
+    margin-bottom: 10px;
+}
+
+.intro--section img {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.classes--table {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.classes--table li {
+    text-align: left;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.classes--table li:last-child {
+    border: none;
+}
+
+.classes--box {
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.classes--box img {
+    width: 60%;
+}
+
+.classes--sign-btn {
+    background-color: #e29578;
+    padding: .7em;
+    border-radius: .5em;
+    margin: 1em auto;
+    display: block;    
+    text-decoration: none;
+    color: #fff;
+    width: 50%;
+    max-width: 250px;
+    transition: background-color 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.classes--sign-btn:hover,
+.classes--sign-btn:focus {
+    background-color: #b87760;
+}
+
+.breathing--section {
+    text-align: center;
+    font-size: 2em;
+    background-color: #83c5be;
+    padding: 2em 1em;
+    display: none;
+}
+
+.breathing--section span {
+    display: block;
+    transition: all 1s;
+}
+
+.breathing--section:hover span {
+    letter-spacing: 7px;
+    color: #fff;
+}
+
+.location--section {
+    padding: .5em 1em;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.location--section iframe {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.sign-up--form {
+    text-align: center;
+    background-color: #eeeeee;
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 1em;
+}
+
+.sign-up--form input,
+.sign-up--form select {
+    display: block;
+    margin: 5px auto 20px;
+    border-radius: .25em;
+    padding: .5em;
+    border: 1px solid #333;
+}
+
+.sign-up--form input:focus {
+    border: 2px solid #83c5be;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 1em 2em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+footer nav li {
+    margin-top: .5em;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials i {
+    font-size: 2em;
+}
+
+.socials a {
+    color: #333;
+    border: none;
+    transition: all 1s;
+}
+
+.socials a:hover {
+    color: #83c5be;
+}
+
+@media screen and (min-width: 800px) {
+    .location--container {
+        display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .location--section iframe {
+        max-width: 600px;
+        margin: 10px auto;
+    }
+
+    .location--container ul {
+        margin: auto;
+    }
+
+    .sign-up--inputs {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.7em;
+    }
+
+    .intro--section {
+        flex-direction: row;
+    }
+
+    .classes--table {
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .classes-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .classes--box {
+        width: 25%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mob-nav {
+        display: none;
+    }
+
+    .md-nav {
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .md-nav li {
+        display: inline-block;
+        margin: 0 2em;
+    }
+
+    .breathing--section {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em 4em;
+        margin-top: 2em;
+        align-items: center;
+    }
+
+    footer li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    footer a {
+        border-bottom: 1px solid #333;
+    }
+}

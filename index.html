@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Studio &ndash; Nottingham</title>
+
+    <!-- css assests - line awesome and google fonts -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <!-- css rest stylesheet-->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- css custom stylesheet-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="mob-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="imgs/white-logo.svg" alt="The breathing space logo">
+                </a>
+            </div>            
+            <button id="open-menu-btn">Menu</button>
+            <ul id="mob-nav-element">
+                <div class="close-menu-btn" id="close-menu">Close</div>
+                <a href=""><li>Home</li></a>
+                <a href="#intro"><li>About</li></a>
+                <a href="#classes-info"><li>Classes</li></a>
+                <a href="#sign-up"><li>Sign Up</li> </a>               
+            </ul>
+        </nav>
+        <nav class="md-nav">
+            <div class="logo">
+                <img src="imgs/white-logo.svg" alt="The breathing space logo">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#classes-info">Classes</a></li>
+            </ul>
+            <a class="sign-up-btn" href="#sign-up">Sign Up</a>
+        </nav>
+
+        <h1>The Breathing Space <span>&dash; Nottingham Yoga Studio</span></h1>
+    </header>
+
+    <main>
+        <section class="intro--section">
+            <div class="intro--img">
+                <img src="imgs/yoga.jpg" alt="One of our members practicing her stretches">
+            </div>
+            <div class="intro--text" id="intro">
+                <h2>A Warm Welcome</h2>
+                <div class="intro--paragraphs">
+                    <p>Hello yogis! We are a yoga studio based in the center of Nottingham. We practice various styles of yoga.</p>
+                    <p>We are a <em>beginner friendly</em> studio, so come have a chat with us to find out more - we're sure you'll feel welcomed!
+                    </p>    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="classes--table" id="classes-info">
+            <h2>Classes</h2>
+            <div class="classes-container">
+                <div class="classes--box">
+                    <div class="classes--img">
+                        <img src="imgs/beginner.svg" alt="Graphic of a woman practicing yoga">
+                    </div>
+                    <h3>Beginners Yoga</h3>
+                    <ul class="classes--info">
+                        <li>This class will ease you into the practice. You will feel welcomed and be immersed into the benefits of yoga.</li>
+                        <li>This class will be supportable for anyone and everyone, regardless of age or level of fitness.</li>
+                        <li>This class is a great introduction to yoga poses. You will soon start feeling the benefits of yoga.</li>
+                    </ul>
+                    <span class="classes--price">£8 a class / £25 a month</span>
+                    <a class="classes--sign-btn" href="#sign-up">Join Class</a>
+                </div>
+                <div class="classes--box">
+                    <div class="classes--img">
+                        <img src="imgs/mid.svg" alt="Graphic of a woman practicing yoga">
+                    </div>
+                    <h3>Iyengar Yoga</h3>
+                    <ul class="classes--info">
+                        <li>This class is a guided and precise form of yoga. The focus is on alignment.</li>
+                        <li>You may need a little experience in yoga for this class, however, the instructor is very involved in this class and will help
+                            with any incorrect form.
+                        </li>
+                        <li>The focus of this class is to realign your body. Props may be used during the class to help yogis will the correct form.</li>
+                    </ul>
+                    <span class="classes--price">£8 a class / £25 a month</span>
+                    <a class="classes--sign-btn" href="#sign-up">Join Class</a>
+                </div>
+                <div class="classes--box">
+                    <div class="classes--img">
+                        <img src="imgs/advanced.svg" alt="Graphic of a woman practicing yoga">
+                    </div>
+                    <h3>Vinyasa Yoga</h3>
+                    <ul class="classes--info">
+                        <li>This class focuses on coordinate movement, moving from one pose to another flawlessly. No two classes will be the same as we vary the poses each time!</li>
+                        <li>This class is geared towards more advanced yoga practitioners as you need familiarity with various yoga poses.</li>
+                        <li>Given the variety of poses, this class helps with body posture and having a more balanced body.</li>
+                    </ul>
+                    <span class="classes--price">£8 a class / £25 a month</span>
+                    <a class="classes--sign-btn" href="#sign-up">Join Class</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="breathing--section">
+            <p>Give yourself some <span>breathing</span> space</p>
+        </section>
+
+        <section class="location--section">
+            <h2>Location</h2>
+            <div class="location--container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1201.8534942039266!2d-1.1435005858444303!3d52.95369515204318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb80a2e0fbd10539!2sBahia%20Yoga!5e0!3m2!1sen!2suk!4v1616281529065!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <ul>
+                    <li>1st Floor, 4 Stoney St</li>
+                    <li>Nottingham</li>
+                    <li>NG1 1LG</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sign-up--section" id="sign-up">
+            <h2>Sign Up</h2>
+            <form action="" method="get" class="sign-up--form">
+                <div class="sign-up--inputs">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="class-selection">Select Your Class</label>
+                        <select id="class-selection">
+                            <option value="class-one">Beginners</option>
+                            <option value="class-two">Iyengar</option>
+                            <option value="class-three">Vinyasa</option>
+                        </select>
+                    </div>
+                </div>
+            <button class="classes--sign-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright-info">
+          <img src="imgs/logo.svg" alt="Breathing Space Logo">
+          <p>&copy; 2021</p>  
+        </div>
+        
+
+        <nav>
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#classes-info">Classes</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>                    
+            </ul>
+        </nav>
+
+        <ul class="socials">
+            <li><a href=""><i class="lab la-instagram"></i></a></li>
+            <li><a href=""><i class="lab la-facebook-square"></i></a></li>
+            <li><a href=""><i class="lab la-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
